@@ -1,0 +1,24 @@
+import java.io.*;
+        import java.util.InputMismatchException;
+        import java.util.Scanner;
+public class Kontr_pabota {
+    public static boolean Kontr1(int i, int j) throws InputMismatchException, IOException{
+        if (i+j >= 10 && i+j <= 20){
+            return true; }
+        return false; }
+    public static void Kontr2(int n) throws IOException{
+        int[] num = new int[n];
+        int arrnum = 0;
+        for(int i = 0;i<num.length; i++){
+            num[i] = arrnum;
+            System.out.print(num[i] + " ");
+            arrnum += 3; }
+    }
+    public static void Kontr3() throws IOException {
+        int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6) {
+                arr[i] = arr[i] * 2; }
+            System.out.print(arr[i] + " "); }
+    }
+}
